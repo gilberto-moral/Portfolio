@@ -1,0 +1,148 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "var.scss";
+@import "assets/fonts/fonts.scss";
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Abel-Regular';
+    background-color: #1280C2;
+    background: #1280C2 url(assets/img/bg.png) repeat-x center bottom;
+    background-size: auto 260px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Geral */
+
+.dados {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    top: 45px;
+    padding-bottom: 100px;
+    background-color: #0a79bec9;
+    border-top: 1px solid #00558ea6;
+    clear: both;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    display: block;
+    color: #f2f2f2;
+    font-family: 'YanoneKaffeesatz-Regular';
+    padding: 10px 20px;
+    clear: both;
+    h4 {
+        /* breadcrumb */
+        position: relative;
+        width: 100%;
+        margin: 15px 0;
+        font-size: 1.850rem;
+        line-height: 2.8rem;
+        color: #06395c;
+        display: block;
+        float: left;
+        text-shadow: 1px 1px 2px #53b4f5;
+        opacity: 0.6;
+        left: -4px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #06395c;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        clear: both;
+        animation: breadcrumb 1s;
+        overflow: hidden;
+    }
+    @keyframes breadcrumb {
+        0% {
+            transform: translateX(50%);
+            width: 70%;
+        }
+        25% {
+            transform: translateX(0%);
+        }
+        75% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(0%);
+            width: 100%;
+        }
+    }
+    p {
+        position: relative;
+        width: 100%;
+        margin: 10px 0;
+        padding: 0 20px;
+        font-size: 1.250rem;
+        letter-spacing: 0.8px;
+        text-shadow: 1px 1px 1px #011f33;
+        .subtitle {
+            text-shadow: none;
+            text-transform: uppercase;
+            font-size: 1.250rem;
+            color: #06395c;
+        }
+        &.clear {
+            position: relative;
+            clear: both;
+        }
+    }
+    .dados {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+    /* TOP */
+    &.top {
+        margin: 0;
+    }
+    /* CURRICULUM */
+    &.curriculum {
+        margin: 20px 0 0;
+    }
+    /* WEBSITES */
+    &.websites {
+        margin: 20px 0 0;
+    }
+    /* CONTATOS */
+    &.contatos {
+        margin: 20px 0 0;
+    }
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 20px #1280C2;
+        }
+        to {
+            text-shadow: 0 0 20px #f1f4f5, 0 0 10px #1280C2;
+        }
+    }
+}
+
+@media only all and (max-device-width: 768px) {
+    .dados {
+        width: 94%;
+    }
+    section {
+        padding: 10px;
+        h4 {}
+        p {
+            padding: 0px;
+        }
+    }
+}

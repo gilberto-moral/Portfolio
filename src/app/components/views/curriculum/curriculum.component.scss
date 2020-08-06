@@ -1,0 +1,27 @@
+.curriculum {
+    display: flex;
+    .ancoras {
+        position: relative;
+        width: 100%;
+        display: inline-flex;
+        justify-content: flex-end;
+        margin: 0 auto 20px auto;
+        clear: both;
+        z-index: 2;
+        display: none;
+        a {
+            width: auto;
+            height: 100%;
+            font-family: 'Abel-Regular';
+            font-size: 0.800rem;
+            color: white;
+            cursor: pointer;
+            margin-right: 10px;
+            display: block;
+            text-decoration: none;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}

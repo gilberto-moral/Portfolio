@@ -1,0 +1,10 @@
+.home {
+    display: flex;
+}
+
+
+/* Mobile ate 768px */
+
+@media only all and (max-device-width: 768px) {
+    .home {}
+}
