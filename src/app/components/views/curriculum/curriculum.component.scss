@@ -8,7 +8,7 @@
         margin: 0 auto 20px auto;
         clear: both;
         z-index: 2;
-        display: none;
+        
         a {
             width: auto;
             height: 100%;
@@ -23,7 +23,16 @@
                 color: black;
             }
         }
-        
     }
-    
+}
+
+
+/* Mobile ate 768px */
+
+@media only all and (max-device-width: 768px) {
+    .curriculum {
+        .ancoras {
+            display: none;
+        }
+    }
 }

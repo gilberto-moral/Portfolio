@@ -14,7 +14,7 @@ export class WebsitesComponent implements OnInit {
 
   ngOnInit(): void {
 
-    $(function() {
+    $(document).ready(function(){
       $('.trocar').hover(
           function() {
               $(this).children('.front').stop().animate({
@@ -26,9 +26,8 @@ export class WebsitesComponent implements OnInit {
                   "top": '0'
               }, 400); //Trabalha no hoverOut
           });
-    });
-
-  }
+      });
+    }
 
 
 }
