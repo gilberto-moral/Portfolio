@@ -60,7 +60,7 @@
 
                         ],
                         "scripts": [
-                            "node_modules/jquery/dist/jquery.slim.js"
+                            "node_modules/jquery/dist/jquery.min.js"
                         ]
                     },
                     "configurations": {

@@ -18,9 +18,9 @@ body {
     background-size: auto 260px;
 }
 
-html {
+/*html {
     scroll-behavior: smooth;
-}
+}*/
 
 
 /* Geral */
@@ -140,6 +140,24 @@ section {
             text-shadow: 0 0 20px #f1f4f5, 0 0 10px #1280C2;
         }
     }
+}
+
+.zoom{
+  -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+      -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+       -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+        -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+           transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+
+  &:hover{
+    -webkit-transform: scale(1.05);
+     -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+       -o-transform: scale(1.05);
+          transform: scale(1.05);
+    opacity:0.60; -moz-opacity:0.60; filter:alpha(opacity=60); KHTMLOpacity: 0.6; MozOpacity: 0.6; -khtml-opacity:.60; -ms-filter:"alpha(opacity=60)";
+  }
+  
 }
 
 @media only all and (max-device-width: 768px) {
