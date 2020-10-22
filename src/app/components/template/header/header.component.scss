@@ -102,14 +102,13 @@ header {
                 a {
                     width: 30px;
                     height: 30px;
-                    padding: 2px;
-                    display: block;
+                    display: block;margin-left: 10px;
                 }
                  :hover {
                     opacity: 0.5;
                 }
                  :nth-child(2n) {
-                    margin-left: 10px;
+                    /*margin-left: 10px;*/
                 }
             }
         }
