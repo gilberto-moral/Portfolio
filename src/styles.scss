@@ -166,9 +166,15 @@ section {
     }
     section {
         padding: 10px;
-        h4 {}
+        h4 {
+            font-size: 1.5rem;
+        }
         p {
             padding: 0px;
+
+            .subtitle{
+                font-size: 0.950rem;
+            }
         }
     }
 }
