@@ -1,4 +1,4 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
@@ -9,26 +9,12 @@ import { CurriculumComponent } from './components/views/curriculum/curriculum.co
 
 const routes: Routes = [
   
-  {
-    path:"",
-    component: HomeComponent
-  },
-  {
-    path:"home",
-    component: HomeComponent
-  },
-  {
-    path:"contatos",
-    component: ContatosComponent
-  },
-  {
-    path:"websites",
-    component: WebsitesComponent
-  },
-  {
-    path:"curriculum",
-    component: CurriculumComponent
-  }
+  { path:"", component: HomeComponent },
+  { path:"home", component: HomeComponent },
+  { path:"contatos", component: ContatosComponent },
+  { path:"websites", component: WebsitesComponent },
+  { path:"curriculum", component: CurriculumComponent }
+  
 ];
 
 @NgModule({
